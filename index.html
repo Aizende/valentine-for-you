@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="music-container">
+        <button id="play-music">🎶 Play Romantic Music 🎶</button>
+        <audio id="music1" loop>
+            <source src="audio/romantic1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="music2" loop>
+            <source src="audio/romantic2.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container">
+        <div class="slide active" style="background: linear-gradient(to right, #ff758c, #ff7eb3);">
+            <h1>Dear abinandha ❤️</h1>
+            <p>You are the most beautiful part of my life.</p>
+        </div>
+
+        <div class="slide" style="background: linear-gradient(to right, #ff9a9e, #fad0c4);">
+            <h1>Promise Letter</h1>
+            <p>I promise to stand by you, love you, and cherish every moment with you.</p>
+        </div>
+
+        <div class="slide" style="background: linear-gradient(to right, #fbc2eb, #a6c1ee);">
+            <h1>Our Love Pledge</h1>
+            <p>No matter where life takes us, my heart will always belong to you.</p>
+        </div>
+
+        <div class="slide" style="background: linear-gradient(to right, #a1c4fd, #c2e9fb);">
+            <h1>Romantic Words for You</h1>
+            <p>Every heartbeat of mine echoes your name. You are my dream, my reality, my forever.</p>
+        </div>
+
+        <script>
+            for (let i = 1; i <= 40; i++) {
+                document.write(`
+                    <div class="slide" style="background: url('images/us${i}.jpg') center/cover;">
+                        <h1>Our Beautiful Moments</h1>
+                        <p>Every moment spent with you is a moment worth cherishing.</p>
+                    </div>
+                `);
+            }
+        </script>
+
+        <div class="slide" style="background: linear-gradient(to right, #ffb6c1, #ff69b4);">
+            <h1>Forever Yours ❤️</h1>
+            <p style="max-width: 90%; font-size: 1.2rem; line-height: 1.8;">
+                My love, I want you to know that no matter what happens, I will always be by your side. 
+                Through every joy and every challenge, through every smile and every tear, I promise to stand beside you, 
+                to hold your hand, and to love you with all my heart. You are my greatest treasure, my most beautiful dream, 
+                and the reason my world feels so complete. I love you more than anything in this entire universe, 
+                and I will love you endlessly, now and forever. 💖
+            </p>
+        </div>
+
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
